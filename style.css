@@ -25,12 +25,16 @@ h1 {
 }
 
 ul {
-  list-style-image: url('assets/images/icon-list.svg');
-  padding-left: 25px;
+  padding-left: 0px;
+  list-style: none;
 }
 
 li {
-  padding-left: 10px;
+  padding: 10px 0px 7px 40px;
+  background-image: url('assets/images/icon-list.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 21px;
 }
 
 label {
@@ -55,6 +59,7 @@ label {
   width: 327px;
   height: 56px;
   border-radius: 8px;
+  border: none;
   margin: 15px auto;
   background-color: hsla(234, 29%, 20%, 1);
   color: hsla(0, 0%, 100%, 1);
