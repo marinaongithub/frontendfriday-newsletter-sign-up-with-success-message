@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -21,6 +23,8 @@
   <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Illustration sign up mobile"  width="375" height="284">
 
   <main>
+
+    <section class="stay-updated"></section>
     <h1>Stay updated!</h1>
 
     <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -30,12 +34,12 @@
       <li>Measuring to ensure updates are a success</li>
       <li>And much more!</li>
     </ul>
-  
+    
 
     <form action="success.html">
       <label for="email">Email address</label><br>
       <input type="text" id="email" name="email" value="email@company.com"><br>
-      <input type="submit" value="Subscribe to monthly newsletter">
+      <input type="submit" id="subscribe" value="Subscribe to monthly newsletter">
     </form>
 
   <!-- Sign-up form end -->
