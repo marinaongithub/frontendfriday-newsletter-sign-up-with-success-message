@@ -8,16 +8,25 @@ body {
   height: 100vh;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 842px;
+  margin: auto;
+
+}
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-main {
+#stay-updated {
   width: 327px;
   height: 478px;
-  margin: auto;
+  margin: 0px auto;
 }
 
 h1 {
@@ -55,7 +64,22 @@ label {
   font-weight: 400;
 }
 
-#subscribe {
+main {
+  padding-top: 160px;
+  margin: auto;
+  width: 327px;
+}
+
+#success-icon {
+  margin-left: 0px;
+}
+
+#thanks {
+  margin-bottom: 240px; ; 
+  height: 304px;
+}
+
+.button {
   width: 327px;
   height: 56px;
   border-radius: 8px;
