@@ -50,6 +50,7 @@ li {
 
 form {
   margin: 30px 0px;
+  width: 376px;
 }
 
 label {
@@ -131,6 +132,8 @@ main {
 
   h1 {
     font-size: 56px;
+    line-height: 56px;
+    margin: 30px auto;
   }
 
   #email, .button {
@@ -139,6 +142,18 @@ main {
 
   img {
     margin: 0px 25px 0px 0px;
+  }
+
+  main {
+    background-color: hsla(0, 0%, 100%, 1);
+    width: 504px;
+    height: 520px;
+    border-radius: 25px;
+    padding: 60px;
+  }
+
+  #thanks {
+    margin: 0px;
   }
   .attribution {
     color: hsla(0, 0%, 100%, 1);
