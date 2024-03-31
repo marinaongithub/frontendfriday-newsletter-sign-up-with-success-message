@@ -35,8 +35,8 @@ const emailInput = document.getElementById('email');
 
 // Check validity of email input
 function isValidEmail(email) {
-    const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    regex.test(email);
+    const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
 }
 
 // Define display of error message
@@ -54,7 +54,8 @@ function validateEmail() {
         setError();
     }
     else {
-        localStorage("email", emailValue);
+        localStorage.setItem("email", emailValue);
+        window.location.href = "success.html";
     }
 }
 

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preload" as="font" href="assets/fonts/Roboto-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="assets/fonts/Roboto-Bold.ttf" type="font/ttf" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   
@@ -23,7 +24,7 @@
       <img src="assets/images/icon-success.svg" alt="Success icon" id="success-icon" width="64" height="64">
       <h1>Thanks for subscribing!</h1>
 
-      <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+      <p>A confirmation email has been sent to <strong id="retrieved"></strong>. 
         Please open it and click the button inside to confirm your subscription.</p>
     </section>    
 
@@ -40,5 +41,11 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Marina</a>.
   </div>
+
+  <script>
+    const retrievedValue = localStorage.getItem('email');
+    document.getElementById("retrieved").textContent = retrievedValue;
+    console.log(document.getElementById("retrieved"));
+  </script>
 </body>
 </html>
