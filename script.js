@@ -16,7 +16,7 @@ function switchImage(x) {
   }
   
     // Create a MediaQueryList object
-const x = window.matchMedia("(min-width: 426px)")
+const x = window.matchMedia("(min-width: 431px)")
   
     // Call listener function at run time
 switchImage(x);

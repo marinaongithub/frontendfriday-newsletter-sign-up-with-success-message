@@ -144,7 +144,7 @@ main {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 426px) { 
+@media only screen and (min-width: 431px) { 
 
   body {
     background-color: hsla(234, 17%, 26%, 1);
