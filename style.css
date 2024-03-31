@@ -44,6 +44,10 @@ img {
   margin: 0px auto;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 ul {
   padding-left: 0px;
   list-style: none;
