@@ -3,10 +3,22 @@
   box-sizing: border-box;
 }
 
+@font-face {  
+  font-family: 'Roboto';  
+  font-weight: 400;  
+  src: local('Roboto Regular'), url('assets/fonts/Roboto-Regular.ttf') format('ttf');
+}
+
+@font-face {  
+  font-family: 'Roboto';  
+  font-weight: 700;  
+  src: local('Roboto Bold'), url('assets/fonts/Roboto-Bold.ttf') format('ttf');
+} 
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", "sans-serif";
+  font-family: 'Roboto', sans-serif;
   margin: auto;
   min-height: 100vh;
 }
@@ -53,9 +65,17 @@ form {
   width: 376px;
 }
 
-label {
+#left {
   font-size: 12px;
   font-weight: 700;
+}
+
+#invalidMsg {
+  visibility: hidden;
+  font-size: 12px;
+  font-weight: 700;
+  color: hsla(4, 100%, 67%, 1);
+  float: right;
 }
 
 #email {
@@ -66,9 +86,15 @@ label {
   border-color: hsla(243, 28%, 13%, 0.25);
   padding-left: 20px;
   margin: 10px auto;
-  color: hsla(243, 28%, 13%, 0.25);
+  color: hsla(234, 29%, 20%, 1);
   font-size: 16px;
   font-weight: 400;
+}
+
+.invalid {
+  outline: 1px solid hsla(4, 100%, 67%, 1);
+  background-color: hsla(4, 100%, 67%, 0.15);
+  color: hsla(4, 100%, 67%, 1) !important;
 }
 
 main {
@@ -138,6 +164,10 @@ main {
 
   #email, .button {
     width: 376px;
+  }
+
+  #email:hover {
+    cursor: pointer;
   }
 
   .button:hover {

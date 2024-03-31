@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
+    <link rel="preload" as="font" href="assets/fonts/Roboto-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Roboto-Bold.ttf" type="font/ttf" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
@@ -29,18 +30,18 @@
         </ul>
           
 
-        <form action="success.html">
-          <label for="email">Email address</label><br>
-          <input type="text" id="email" name="email" value="email@company.com"><br>
-          <input type="submit" class="button" value="Subscribe to monthly newsletter">
+        <form action="success.html" id="form">
+          <label for="email" id="left">Email address</label><div id="invalidMsg">Valid email required</div>
+          <input type="text" id="email" name="email" placeholder="email@company.com" required><br>
+          <input type="submit" class="button" id="submit" value="Subscribe to monthly newsletter" onclick="validateEmail()">
         </form>
-      </section>  
+      </section> 
     </div>   
 
     <!-- Sign-up form end -->
       
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_self">Frontend Mentor</a>. 
       Coded by <a href="#">Marina</a>.
     </div>
 
